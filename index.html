@@ -374,6 +374,167 @@
     background: linear-gradient(90deg, var(--crimson) 0%, #B8860B 50%, var(--crimson) 100%);
   }
 
+  /* ── Mobile responsive ── */
+  @media (max-width: 768px) {
+    :root {
+      --text-xs:  9px;
+      --text-sm:  11px;
+      --text-md:  13px;
+      --text-lg:  16px;
+      --text-xl:  18px;
+      --text-2xl: 24px;
+      --text-3xl: 28px;
+    }
+
+    body {
+      padding: 20px 15px;
+    }
+
+    .card {
+      width: 100%;
+      max-width: 500px;
+    }
+
+    .content {
+      padding: 40px 30px 30px;
+    }
+
+    .ganesh-row {
+      gap: 12px;
+      margin-bottom: 18px;
+    }
+    .ganesh-icon { width: 28px; height: 28px; }
+
+    .title-divider {
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+    .title-divider .tline { width: 40px; }
+
+    .couple-block {
+      grid-template-columns: 1fr;
+      gap: 32px;
+      margin: 24px 0;
+    }
+
+    .person {
+      padding: 0;
+    }
+
+    .and-divider {
+      flex-direction: row;
+      padding: 12px 0;
+      gap: 12px;
+      justify-content: center;
+    }
+    .and-vline { width: 40px; height: 1px; }
+    .and-symbol { font-size: var(--text-xl); }
+
+    .details-grid {
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-bottom: 18px;
+    }
+
+    .detail-box {
+      padding: 14px 10px;
+    }
+
+    .venue-block {
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+
+    .corner {
+      width: 32px;
+      height: 32px;
+    }
+
+    .outer-border {
+      inset: 8px;
+    }
+    .inner-border {
+      inset: 11px;
+    }
+
+    .section-divider {
+      margin: 22px 0 18px;
+      gap: 12px;
+    }
+
+    .muhurtham-note {
+      font-size: var(--text-md);
+      margin-bottom: 20px;
+      line-height: 1.6;
+    }
+
+    .family-line {
+      font-size: var(--text-md);
+      margin-bottom: 20px;
+      line-height: 1.7;
+    }
+
+    .host-section {
+      padding-top: 16px;
+      margin-top: 6px;
+    }
+
+    .host-names {
+      font-size: var(--text-lg);
+      line-height: 1.6;
+    }
+
+    .contact {
+      font-size: var(--text-xs);
+      margin-top: 10px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    body {
+      padding: 15px 10px;
+    }
+
+    .card {
+      max-width: 100%;
+    }
+
+    .content {
+      padding: 30px 20px 20px;
+    }
+
+    :root {
+      --text-xl:  16px;
+      --text-2xl: 20px;
+    }
+
+    .invite-title h1 {
+      font-size: var(--text-xs);
+      letter-spacing: 2px;
+    }
+
+    .invite-title h2 {
+      font-size: var(--text-xl);
+      letter-spacing: 1px;
+    }
+
+    .person-name {
+      font-size: var(--text-lg);
+    }
+
+    .detail-value {
+      font-size: var(--text-lg);
+    }
+
+    .venue-name {
+      font-size: var(--text-lg);
+    }
+
+    .host-names {
+      font-size: var(--text-lg);
+    }
+  }
+
   @media print {
     body { background: white; padding: 0; }
     .card { box-shadow: none; }
